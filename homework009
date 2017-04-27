@@ -1,0 +1,9 @@
+1
+
+使用 user 或 users 只是一種命名慣例， resource 配單數、 resources 配複數。
+resources 產生的路由有完整8條。而 resource 只有7條(少了 index 的方法)，且路徑不會包含 :id 。
+resources 可透過傳遞參數來存取多項資料中指定的某一個(配複數)，而 resource 不行(配單數)。
+
+2
+
+使用 member 方式產生的路徑，會帶有 :id 在裡面，這個 :id 會傳到 Controller 裡變成 params 這個變數的一部份。 collection適用在多筆資料，而member則用在單筆。
